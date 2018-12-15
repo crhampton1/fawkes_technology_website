@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+@media only screen and (max-width:768px) {
+    .container {
+        width: 100% !important;
+    }
+}
+    
 .container {
     background-color:rgb(250, 250, 250);
     width: 75%;
@@ -8,9 +14,8 @@
 }
  form {
      display: grid;
-     width: 70%;
-     grid-template-columns: 50% 50%;
-     padding: 20px;
+     grid-template-columns: repeat(auto-fill, 20% [col-start] 80% [col-end] );
+     padding: 5%;
      grid-gap: 1rem
  }
 
@@ -70,5 +75,9 @@ button:focus {
   button:hover{
     background-color: #9fecf0;
   }
+
+
+
+  
   
 
