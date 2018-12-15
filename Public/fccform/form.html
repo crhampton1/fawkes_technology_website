@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>A Form Project for FCC</title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+            <h1 id="title"> Adoption Sign Up </h1>
+
+        <div class="container">
+            <p id="description">This form will allow you to adopt a cat, if approved!</p>
+            <form id="survey-form" action="form.html" method="GET">
+                <label for="name" id="name-label">Name:</label>                     
+                <input id="name" type="text" name="name" class="input" required placeholder="Johnny Appleseed">      
+                <label for="email" id="email-label">Email:</label>
+                <input id="email" type="email" name="email" class="input" required placeholder="appleseed@apples.com">
+                <label for="number" id="number-label">Number:</label>
+                <input id="number" type="number" name="number" class="input" min="0" max="10" required placeholder="5">
+                <label for="dropdown" id="dropdown-label">Make Your Selection:</label>
+                <select name="dropdown" id="dropdown" class="input">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                </select>         
+                <label for="checkbox" id="checkbox-label">Select your house:</label>
+                <div class="input left-align">
+                        <input  name="house" type="checkbox" value="box" class="options"> House <br>
+                        <input  name="apartment" type="checkbox" value="box2" class="options"> Apartment<br>
+                        <input  name="apartment" type="checkbox" value="box2" class="options"> Car<br>
+                 </div>
+                <label id="radio-label">Select your gender:</label>
+                <div class="input left-align">
+                    <input type="radio" name="gender" value="male" class="options">Male<br>
+                    <input type="radio" name="gender" value="female" class="options">Female<br>
+                    <input type="radio" name="gender" value="other" class="options">Doesn't Matter<br>
+                </div> 
+                <label for="textarea" class="extra-margin">Comments:</label>
+                <textarea id="textarea" name="textarea" placeholder="Comments?" class="extra-margin"></textarea>
+                
+                <div></div>
+                <p><button id="submit"><b>Submit</b></button></p>      
+            </form>
+        </div>
+     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
