@@ -3,7 +3,7 @@
 @media only screen and (max-width:768px) {
     .container {
         width: 100% !important;
-        padding: 3%;
+        padding: 3% !important;
     }
     button {
         width: 100% !important;
